@@ -2,6 +2,8 @@
 ## Curso online
 ### Caderno de anotações
 #### Git e Versionamento
+> Versionamento e seus estados
+
 O versionamento é o registro das alterações de um programa, onde pode-se fazer uso de versões anteriores para recuperar funcionalidades, ou recuperar versões que não continham um determinado erro, dentre outras funções. Ex: v. 1.1, v. 2.3.2, v. 3.0
 
 O Git pe um sistema de versionamento de código que salva referencias de dados em momentos de um programa. A maioria dos Gits são feitos na máquina para que se tennha mais facilidade na hora de localizar e/ou transferir arquivos.
@@ -18,6 +20,16 @@ A ordem de modificações de um arquivo, sob os 4 modos é:
 Untracked| Unmodified | Modified | Staged 
 |---------|------------|----------|-------|
 |Primeiro se cria o arquivo e, quando ele não é salvo, ele está Entracked, e quando se salva o arquivo, ele está Unmodified|Unmodified é o estado onde o arquivo está salvo, sem alteração alguma desde seu ultimo salvamento| Então, quando se altera algo, o arquivo está Modified, já que existem alterações não salvas, e para iniciar o processo de salvamento, usa-se "git add"| Por fim, temos o Staged, onde se tem o arquivo quase salvo, é uma forma de dizer ao computador que você está preparado para das o Commit no arquivo
+
+> Branch
+
+Bratchs são ramificações de um código, onde, se é possivel duas ou mais pessoas altearem um mesmo código de forma que possam uní-los depois. Geralmente, a Branch principal é a "master".
+
+Ex: Ao criar ma rede-social, o programador 1 está configurando o botão de login, enquanto o programador 2 está configurando o botão de cadastro. Quando ambos terminatem, poderão unir suas alterações (branch) para um único arquivo.
+
+Para criar uma nova Brantch, usa-se o código "git bratch *nome da branch *", mas para começar a alterar sob esta branch, é preciso usar "git checkout *nome da branch *".
+
+Ao se fazer alterações nas Branch's,  são criadas ramificações que podem não ser lidas de uma branch para a outra.
 
 ### Lista de comandos:
 > git config --global user.name "nome do usuário" | Configura o nome do usuário daquela máquina
@@ -46,7 +58,13 @@ Untracked| Unmodified | Modified | Staged
 
 > git pull | Quando há mais de um autor, e é feito uma alteração no repositório, este comando trará todas as alterações para o código a ser alterado, alterando-o
 
-> git fetch | Quando há mais de um autor, e é feito uma alteração no repositório, este comando trará todas as alterações para o código a ser alterado, sem alterá-lo, então dá para usar o comando 'git diff origin/master' para mostras as alterações no repositório sem alterar seu código.
+> git fetch | Quando há mais de um autor, e é feito uma alteração no repositório, este comando trará todas as alterações para o código a ser alterado, sem alterá-lo, então dá para usar o comando 'git diff origin/*nome da branch *' para mostras as alterações no repositório sem alterar seu código.
+
+> git bratch *nome da branch * | Cria uma nova Branch
+
+> git checkout *nome da branch * | Leva o autor, a partir do código, a alterar o arquivo nesta branch
+
+>git log --online --decorate | Mostra uma lista de Commits, mas mostra o status de qual branch o autor está alterando no momento
 
 ## Teste de aptidão
 ### Resultado
