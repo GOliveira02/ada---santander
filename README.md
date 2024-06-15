@@ -37,6 +37,17 @@ Untracked| Unmodified | Modified | Staged
 > git diff | Mostra as alterações feitas no arquivo, quando está no status Modified
 
 > git diff --staged | Mostra as alterações feitas no arquivo, quando está no status Staged
+
+>git log | Mostra uma lista dos Commits junto do autor e o email do mesmo junto da mensagem do commit
+
+>git restore *nome do arquivo *| É usado para restaurar o arquivo para o ultimo estado antes da alteração, mas caso o arquivo esteja em Stagad, é preciso acrescentar "--staged" como apredentado no comando abaixo
+
+> git restore --staged *nome do arquivo *| Passa o arquivo de Staged para Modified, caso tenha usado o comando "git add"
+
+> git pull | Quando há mais de um autor, e é feito uma alteração no repositório, este comando trará todas as alterações para o código a ser alterado, alterando-o
+
+> git fetch | Quando há mais de um autor, e é feito uma alteração no repositório, este comando trará todas as alterações para o código a ser alterado, sem alterá-lo, então dá para usar o comando 'git diff origin/master' para mostras as alterações no repositório sem alterar seu código.
+
 ## Teste de aptidão
 ### Resultado
 ## Resolução de caso
