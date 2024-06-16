@@ -1,4 +1,5 @@
 # Ada - Santander Coders
+Este repositório foi criado com a função de armazenar os processos do curso Santander Coders, pela empresa ADA. Este arquivo Markdown resumirá o caderno de anotações e resultados dos processos.
 ## Curso online
 ### Caderno de anotações
 #### Git e Versionamento ----------------------------------------------------------------
