@@ -29,7 +29,7 @@ Ex: Ao criar ma rede-social, o programador 1 está configurando o botão de logi
 
 Para criar uma nova Brantch, usa-se o código "git bratch *nome da branch *", mas para começar a alterar sob esta branch, é preciso usar "git checkout *nome da branch *".
 
-Ao se fazer alterações nas Branch's,  são criadas ramificações que podem não ser lidas de uma branch para a outra.
+Ao se fazer alterações nas Branch's,  são criadas ramificações que podem não ser lidas de uma branch para a outra. Mas para mesclar as brunchs usa o comando "git merge *nome da branch *".
 
 ### Lista de comandos:
 > git config --global user.name "nome do usuário" | Configura o nome do usuário daquela máquina
@@ -50,9 +50,9 @@ Ao se fazer alterações nas Branch's,  são criadas ramificações que podem n�
 
 > git diff --staged | Mostra as alterações feitas no arquivo, quando está no status Staged
 
->git log | Mostra uma lista dos Commits junto do autor e o email do mesmo junto da mensagem do commit
+> git log | Mostra uma lista dos Commits junto do autor e o email do mesmo junto da mensagem do commit
 
->git restore *nome do arquivo *| É usado para restaurar o arquivo para o ultimo estado antes da alteração, mas caso o arquivo esteja em Stagad, é preciso acrescentar "--staged" como apredentado no comando abaixo
+> git restore *nome do arquivo *| É usado para restaurar o arquivo para o ultimo estado antes da alteração, mas caso o arquivo esteja em Stagad, é preciso acrescentar "--staged" como apredentado no comando abaixo
 
 > git restore --staged *nome do arquivo *| Passa o arquivo de Staged para Modified, caso tenha usado o comando "git add"
 
@@ -64,7 +64,10 @@ Ao se fazer alterações nas Branch's,  são criadas ramificações que podem n�
 
 > git checkout *nome da branch * | Leva o autor, a partir do código, a alterar o arquivo nesta branch
 
->git log --online --decorate | Mostra uma lista de Commits, mas mostra o status de qual branch o autor está alterando no momento
+> git log --online --decorate | Mostra uma lista de Commits, mas mostra o status de qual branch o autor está alterando no momento
+
+> git merge *nome da branch * | Mescla a branch ao qual se coloca o nome à branch atual (talvez a master?)
+
 
 ## Teste de aptidão
 ### Resultado
