@@ -101,7 +101,7 @@ A tag **Parágrafo**:
 
 É possivel, no HTML, aninhar tags, como, por exemplo, transformar uma imagem em um botão, ou acrescentar uma caixa de seleção em um parágrafo. Alem da possibilidade de dar caracteristicas às tags, como largura, comprimento, cor, opacidade, dentre outras.
 
-Dentro de um arquivo HTML, existem predefinições comuns:
+Dentro de um arquivo HTML, existem predefinições básicas:
 | Tag | Descrição|
 |-----|----------|
 | `<html>` | É a tag raiz que encapsula todo o conteúdo de um documento HTML.|
@@ -112,9 +112,115 @@ Dentro de um arquivo HTML, existem predefinições comuns:
 | `<p>`    | Define um parágrafo de texto.|
 | `<div>`  | Define uma divisão ou seção no 
 
+> Para fins de estudos, é possivel checar repositórios públicos, uma boa opção é o "MDN HTML".
 
+- Quando dentro de um arquivo HTML, não adianta apertar enter duas vezes pasa quebrar a linha, por isso, pode-se usar a tag `<br>` para quebrar a linha. Se duas tags `<br>` forem colocadas na mesma linha, isso contará como dois espaços de linha, como:
+
+~~~html
+<p>Paralelepipedo <br><br> azul<p>
+~~~
+> <p>Paralelepipedo <br><br> azul<p>
+
+- Tambem existe a linha horizontal para separar sessões, ela é demarcada pela tag `<hr>`, que fica
+
+~~~HTML
+<h3>O paralelepipedo azul</h3> <hr> <h4>O paralelepipedo azul não é rosa</h4>
+~~~
+
+><h3>O paralelepipedo azul</h3> <hr> <h4>O paralelepipedo azul não é rosa</h4>
+
+~~~html
+<!-- É com este comando que se coloca comentários no arquivo HTML -->, usando uma exclamação entre maior e menor que: <!-- -->
+~~~
+
+A tag `<a>` em HTML é utilizada para criar links, permitindo a navegação entre páginas web, documentos, ou mesmo diferentes partes de uma mesma página. A forma básica de usar a tag `<a>` é incluir um atributo `href` que especifica o destino do link. Aqui está um exemplo simples:
+
+```html
+<a href="https://www.example.com">Visite o Example</a>
+```
+
+### Atributos Comuns da Tag `<a>`
+
+1. **href**
+   O atributo `href` (hypertext reference) especifica o URL do destino do link. Pode ser um link absoluto (começando com `http://` ou `https://`) ou um link relativo.
+
+   ```html
+   <a href="https://www.example.com">Visite o Example</a>
+   <a href="/pasta/pagina.html">Página Interna</a>
+   ```
+
+2. **target**
+   O atributo `target` define onde o link será aberto. Os valores mais comuns para este atributo são:
+
+   - `_self`: Abre o link na mesma janela ou aba (padrão).
+   - `_blank`: Abre o link em uma nova janela ou aba.
+   - `_parent`: Abre o link no frame pai (usado em contextos de frames).
+   - `_top`: Abre o link no corpo inteiro da janela, removendo todos os frames.
+
+   ```html
+   <a href="https://www.example.com" target="_self">Link na Mesma Aba</a>
+   <a href="https://www.example.com" target="_blank">Link em Nova Aba</a>
+   ```
+
+3. **title**
+   O atributo `title` fornece um texto adicional sobre o link, que aparece quando o usuário passa o cursor sobre o link.
+
+   ```html
+   <a href="https://www.example.com" title="Visite Example">Link com Título</a>
+   ```
+
+4. **rel**
+   O atributo `rel` especifica a relação entre o documento atual e o documento vinculado. Alguns valores comuns são:
+
+   - `noopener`: Usado com `target="_blank"` para impedir que a página recém-aberta possa acessar a página original via `window.opener`.
+   - `nofollow`: Informa aos motores de busca para não seguirem o link.
+   - `noreferrer`: Não envia informações de referência ao destino do link.
+
+   ```html
+   <a href="https://www.example.com" target="_blank" rel="noopener">Link Seguro</a>
+   <a href="https://www.example.com" rel="nofollow">Link Sem Seguimento</a>
+   ```
+
+### Exemplos Completos
+
+#### Link Básico
+
+```html
+<a href="https://www.example.com">Visite o Example</a>
+```
+
+#### Link Abrindo em Nova Aba
+
+```html
+<a href="https://www.example.com" target="_blank">Visite o Example em Nova Aba</a>
+```
+
+#### Link Com Título
+
+```html
+<a href="https://www.example.com" title="Visite Example para mais informações">Mais Informações</a>
+```
+
+#### Link Seguro com `rel`
+
+```html
+<a href="https://www.example.com" target="_blank" rel="noopener noreferrer">Link Seguro</a>
+```
+
+### Comentários em HTML
+
+Assim como mencionado anteriormente, os comentários em HTML são feitos usando `<!-- comentário -->`. Eles são úteis para incluir notas ou explicações dentro do código sem que sejam exibidas na página.
+
+```html
+<!-- Este é um comentário em HTML -->
+<a href="https://www.example.com" target="_blank">Visite o Example</a>
+```
+
+Usar a tag `<a>` de forma eficaz permite criar links funcionais e acessíveis, aprimorando a navegação e a usabilidade do seu site.
 
 ##### Lista de comandos HTML:
+
+> `<!-- *conteudo * -->` | Usado para acrescentar comentários no código que não aparecerão para o usuário final.
 
 > `<button> *Conteudo * </button>` | Usada para colocar um botão
 
@@ -140,6 +246,9 @@ Dentro de um arquivo HTML, existem predefinições comuns:
 
 > `<img src="URL" alt="Descrição">` | Usada para definir uma imagem. O atributo src especifica o caminho da imagem e o atributo alt fornece um texto alternativo.
 
+> `<br>` | Usada para quebrar a linha, ou dar espaçamento entre linhas dentro de um arquivo.
+
+>`<hr>` | Usado para criar uma linha horizontal
 
 ## Teste de aptidão
 ### Resultado
