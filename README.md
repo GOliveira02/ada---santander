@@ -73,6 +73,7 @@ Ao se fazer alterações nas Branch's,  são criadas ramificações que podem n�
 HTML é uma linguagem de **marcação** utilizada na construção de páginas na Web, usada para criar a estrutura da página Web. E refere-se à forma,, hierarquia, ordem e/ou semantica.
 
 A estrutura de um arquivo HTML conta com duas tags de extrema importancia:
+
 | Head | Body|
 |-----------------------------------------------|------------------------------------------|
 | A tag `<head>` contém metadados sobre o documento. | A tag `<body>` contém o conteúdo principal do documento. |
