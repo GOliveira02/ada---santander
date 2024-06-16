@@ -116,9 +116,9 @@ Dentro de um arquivo HTML, existem predefinições comuns:
 
 ##### Lista de comandos HTML:
 
-> < button> *Conteudo * < /button> | Usada para colocar um botão
+> `<button> *Conteudo * </button>` | Usada para colocar um botão
 
-> < p> *Conteudo * < /p> | Usada para criar um parágrafo
+> `<p> *Conteudo * </p>` | Usada para criar um parágrafo
 
 > `<h1> Conteúdo </h1>` | Usada para representar um título de nível 1, geralmente usado como o título principal da página, mas que pode ir de 1 a 6.
 
