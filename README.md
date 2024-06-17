@@ -347,6 +347,7 @@ Ao adicionar uma imagem, é preciso levar em consideração que as imagens adici
     ```
 
 
+
 ##### Lista de comandos HTML:
 
 > `<!-- *conteudo * -->` | Usado para acrescentar comentários no código que não aparecerão para o usuário final.
