@@ -218,6 +218,135 @@ Assim como mencionado anteriormente, os comentários em HTML são feitos usando 
 
 Usar a tag `<a>` de forma eficaz permite criar links funcionais e acessíveis, aprimorando a navegação e a usabilidade do seu site.
 
+Ao adicionar uma imagem, é preciso levar em consideração que as imagens adicionadar a um arquivo HTML, quando renderizadas, acabam ficando uma ao lado da outra, por isso, é necessário que use `<br>` para a quebra de página.
+
+<!--Falar de listas numeradas e não numeradas-->
+
+ `<div> Conteúdo </div>` | `<span> Conteúdo </span>` |
+ |-----------------------|---------------------------|
+ |Usada para definir uma divisão ou seção no documento, geralmente usada para agrupar elementos. O `<div>` é um elemento de bloco, o que significa que ele ocupa toda a largura disponível e começa em uma nova linha. | Usada para definir uma seção em linha, usada para agrupar elementos dentro de um parágrafo ou outro bloco de texto. O `<span>` é um elemento em linha, o que significa que ele não inicia uma nova linha e ocupa apenas a largura necessária para seu conteúdo.|
+
+### Explicação das tags:
+
+- **`<div>`**:
+  - A tag `<div>` é usada como um contêiner genérico para agrupar outros elementos HTML. É um elemento de bloco, o que significa que ele ocupa toda a largura disponível e começa em uma nova linha. 
+  - É frequentemente usada para aplicar estilos CSS a um grupo de elementos ou para organizar o layout de uma página web.
+  - Exemplo de uso:
+    ```html
+    <div>
+      <h1>Título</h1>
+      <p>Este é um parágrafo dentro de um div.</p>
+    </div>
+    ```
+
+- **`<span>`**:
+  - A tag `<span>` é usada para agrupar partes de texto ou outros elementos em linha. É um elemento em linha, o que significa que ele não inicia uma nova linha e ocupa apenas a largura necessária para seu conteúdo.
+  - É comumente usada para aplicar estilos CSS a uma parte específica de texto ou para manipulação via JavaScript.
+  - Exemplo de uso:
+    ```html
+    <p>Este é um <span style="color: red;">texto destacado</span> dentro de um parágrafo.</p>
+    ```
+
+### Explicação das tags de formatação de texto:
+
+- **`<b>`**:
+  - A tag `<b>` é usada para deixar o texto em negrito. Essa tag não adiciona importância ao texto.
+  - Exemplo:
+    ```html
+    <b>Texto em negrito</b>
+    ```
+
+- **`<strong>`**:
+  - A tag `<strong>` é usada para dar ênfase forte ao texto, geralmente exibido em negrito. Essa tag indica que o texto é de grande importância.
+  - Exemplo:
+    ```html
+    <strong>Texto com ênfase forte</strong>
+    ```
+
+- **`<i>`**:
+  - A tag `<i>` é usada para deixar o texto em itálico. Essa tag não adiciona ênfase ao texto.
+  - Exemplo:
+    ```html
+    <i>Texto em itálico</i>
+    ```
+
+- **`<em>`**:
+  - A tag `<em>` é usada para dar ênfase ao texto, geralmente exibido em itálico. Essa tag indica que o texto deve ser enfatizado.
+  - Exemplo:
+    ```html
+    <em>Texto com ênfase</em>
+    ```
+
+- **`<u>`**:
+  - A tag `<u>` é usada para sublinhar o texto.
+  - Exemplo:
+    ```html
+    <u>Texto sublinhado</u>
+    ```
+
+- **`<s>`**:
+  - A tag `<s>` é usada para riscar o texto, indicando que algo foi deletado ou não é mais relevante.
+  - Exemplo:
+    ```html
+    <s>Texto riscado</s>
+    ```
+
+- **`<mark>`**:
+  - A tag `<mark>` é usada para destacar o texto com um fundo amarelo, como se tivesse sido marcado com um marcador.
+  - Exemplo:
+    ```html
+    <mark>Texto destacado</mark>
+    ```
+
+- **`<small>`**:
+  - A tag `<small>` é usada para exibir o texto em tamanho menor, muitas vezes usado para notas de rodapé ou avisos legais.
+  - Exemplo:
+    ```html
+    <small>Texto menor</small>
+    ```
+
+- **`<sub>`**:
+  - A tag `<sub>` é usada para exibir o texto em subscrito, abaixo da linha base, geralmente para fórmulas químicas ou matemáticas.
+  - Exemplo:
+    ```html
+    H<sub>2</sub>O
+    ```
+
+- **`<sup>`**:
+  - A tag `<sup>` é usada para exibir o texto em sobrescrito, acima da linha base, geralmente para expoentes ou referências.
+  - Exemplo:
+    ```html
+    E = mc<sup>2</sup>
+    ```
+
+- **`<code>`**:
+  - A tag `<code>` é usada para exibir o texto em uma fonte monoespaçada, geralmente para indicar um trecho de código.
+  - Exemplo:
+    ```html
+    <code>console.log('Olá, mundo!');</code>
+    ```
+
+- **`<pre>`**:
+  - A tag `<pre>` é usada para exibir o texto em uma fonte monoespaçada, preservando espaços e quebras de linha, ideal para blocos de código.
+  - Exemplo:
+    ```html
+    <pre>
+    function hello() {
+        console.log('Olá, mundo!');
+    }
+    </pre>
+    ```
+
+- **`<blockquote>`**:
+  - A tag `<blockquote>` é usada para indicar uma citação em bloco, geralmente recuada.
+  - Exemplo:
+    ```html
+    <blockquote>
+      Este é um exemplo de uma citação longa em bloco.
+    </blockquote>
+    ```
+
+
 ##### Lista de comandos HTML:
 
 > `<!-- *conteudo * -->` | Usado para acrescentar comentários no código que não aparecerão para o usuário final.
@@ -249,6 +378,39 @@ Usar a tag `<a>` de forma eficaz permite criar links funcionais e acessíveis, a
 > `<br>` | Usada para quebrar a linha, ou dar espaçamento entre linhas dentro de um arquivo.
 
 >`<hr>` | Usado para criar uma linha horizontal
+
+> `<div> Conteúdo </div>` | Usada para definir uma divisão ou seção no documento, geralmente usada para agrupar elementos
+
+> `<span> Conteúdo </span>` | Usada para definir uma seção em linha, usada para agrupar elementos dentro de um parágrafo ou outro bloco de texto
+
+- Lista de comandos de formatação de texto em HTML: 
+
+> `<b> Conteúdo </b>` | Usada para deixar o texto em negrito.
+
+> `<strong> Conteúdo </strong>` | Usada para dar ênfase forte ao texto, geralmente exibido em negrito.
+
+> `<i> Conteúdo </i>` | Usada para deixar o texto em itálico.
+
+> `<em> Conteúdo </em>` | Usada para dar ênfase ao texto, geralmente exibido em itálico.
+
+> `<u> Conteúdo </u>` | Usada para sublinhar o texto.
+
+> `<s> Conteúdo </s>` | Usada para riscar o texto (strike-through).
+
+> `<mark> Conteúdo </mark>` | Usada para destacar o texto com um fundo amarelo.
+
+> `<small> Conteúdo </small>` | Usada para exibir o texto em tamanho menor.
+
+> `<sub> Conteúdo </sub>` | Usada para exibir o texto em subscrito (abaixo da linha base).
+
+> `<sup> Conteúdo </sup>` | Usada para exibir o texto em sobrescrito (acima da linha base).
+
+> `<code> Conteúdo </code>` | Usada para exibir o texto em uma fonte monoespaçada, geralmente para código.
+
+> `<pre> Conteúdo </pre>` | Usada para exibir o texto em uma fonte monoespaçada, preservando espaços e quebras de linha.
+
+> `<blockquote> Conteúdo </blockquote>` | Usada para indicar uma citação em bloco.
+
 
 ## Teste de aptidão
 ### Resultado
