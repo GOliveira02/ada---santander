@@ -255,6 +255,7 @@ Ao adicionar uma imagem, é preciso levar em consideração que as imagens adici
     ```html
     <b>Texto em negrito</b>
     ```
+    <b>Texto em negrito</b>
 
 - **`<strong>`**:
   - A tag `<strong>` é usada para dar ênfase forte ao texto, geralmente exibido em negrito. Essa tag indica que o texto é de grande importância.
@@ -262,6 +263,7 @@ Ao adicionar uma imagem, é preciso levar em consideração que as imagens adici
     ```html
     <strong>Texto com ênfase forte</strong>
     ```
+    <strong>Texto com ênfase forte</strong>
 
 - **`<i>`**:
   - A tag `<i>` é usada para deixar o texto em itálico. Essa tag não adiciona ênfase ao texto.
@@ -269,6 +271,7 @@ Ao adicionar uma imagem, é preciso levar em consideração que as imagens adici
     ```html
     <i>Texto em itálico</i>
     ```
+    <i>Texto em itálico</i>
 
 - **`<em>`**:
   - A tag `<em>` é usada para dar ênfase ao texto, geralmente exibido em itálico. Essa tag indica que o texto deve ser enfatizado.
@@ -276,6 +279,7 @@ Ao adicionar uma imagem, é preciso levar em consideração que as imagens adici
     ```html
     <em>Texto com ênfase</em>
     ```
+    <em>Texto com ênfase</em>
 
 - **`<u>`**:
   - A tag `<u>` é usada para sublinhar o texto.
@@ -283,13 +287,15 @@ Ao adicionar uma imagem, é preciso levar em consideração que as imagens adici
     ```html
     <u>Texto sublinhado</u>
     ```
+    <u>Texto sublinhado</u>
 
 - **`<s>`**:
   - A tag `<s>` é usada para riscar o texto, indicando que algo foi deletado ou não é mais relevante.
   - Exemplo:
     ```html
-    <s>Texto riscado</s>
+    <s>Texto tachado</s>
     ```
+    <s>Texto tachado</s>
 
 - **`<mark>`**:
   - A tag `<mark>` é usada para destacar o texto com um fundo amarelo, como se tivesse sido marcado com um marcador.
@@ -297,6 +303,7 @@ Ao adicionar uma imagem, é preciso levar em consideração que as imagens adici
     ```html
     <mark>Texto destacado</mark>
     ```
+    <mark>Texto destacado</mark>
 
 - **`<small>`**:
   - A tag `<small>` é usada para exibir o texto em tamanho menor, muitas vezes usado para notas de rodapé ou avisos legais.
@@ -311,6 +318,7 @@ Ao adicionar uma imagem, é preciso levar em consideração que as imagens adici
     ```html
     H<sub>2</sub>O
     ```
+    H<sub>2</sub>O
 
 - **`<sup>`**:
   - A tag `<sup>` é usada para exibir o texto em sobrescrito, acima da linha base, geralmente para expoentes ou referências.
@@ -318,6 +326,7 @@ Ao adicionar uma imagem, é preciso levar em consideração que as imagens adici
     ```html
     E = mc<sup>2</sup>
     ```
+    E = mc<sup>2</sup>
 
 - **`<code>`**:
   - A tag `<code>` é usada para exibir o texto em uma fonte monoespaçada, geralmente para indicar um trecho de código.
@@ -325,6 +334,8 @@ Ao adicionar uma imagem, é preciso levar em consideração que as imagens adici
     ```html
     <code>console.log('Olá, mundo!');</code>
     ```
+
+    <code>console.log('Olá, mundo!');</code>
 
 - **`<pre>`**:
   - A tag `<pre>` é usada para exibir o texto em uma fonte monoespaçada, preservando espaços e quebras de linha, ideal para blocos de código.
@@ -336,6 +347,11 @@ Ao adicionar uma imagem, é preciso levar em consideração que as imagens adici
     }
     </pre>
     ```
+    <pre>
+    function hello() {
+        console.log('Olá, mundo!');
+    }
+    </pre>
 
 - **`<blockquote>`**:
   - A tag `<blockquote>` é usada para indicar uma citação em bloco, geralmente recuada.
@@ -346,7 +362,108 @@ Ao adicionar uma imagem, é preciso levar em consideração que as imagens adici
     </blockquote>
     ```
 
+    <blockquote>
+      Este é um exemplo de uma citação longa em bloco.
+    </blockquote>
 
+#### `<body>`
+- **Descrição**: A tag `<body>` contém todo o conteúdo de um documento HTML, incluindo texto, imagens, links, etc.
+- **Atributos Comuns**:
+  - **Global attributes**: `class`, `id`, `style`, `title`, etc.
+
+#### `<nav>`
+- **Descrição**: A tag `<nav>` contém links de navegação.
+- **Atributos Comuns**:
+  - **Global attributes**: `class`, `id`, `style`, `title`, etc.
+
+#### `<a>`
+- **Descrição**: A tag `<a>` define um hyperlink, que é usado para vincular de uma página para outra.
+- **Atributos**:
+  - **`href`**: Especifica a URL da página a ser vinculada.
+  - **`target`**: Especifica onde abrir o link (ex: `_blank` para abrir em nova aba).
+  - **`rel`**: Define a relação entre o documento atual e o documento vinculado (ex: `noopener`, `noreferrer`).
+  - **`alt`**: Alternativo textual da imagem.
+
+#### `<img>`
+- **Descrição**: A tag `<img>` é usada para incorporar uma imagem em uma página HTML.
+- **Atributos**:
+  - **`src`**: Especifica o caminho da imagem.
+  - **`alt`**: Fornece um texto alternativo para a imagem.
+  - **`height`** e **`width`**: Especificam a altura e a largura da imagem.
+
+#### `<ul>`
+- **Descrição**: A tag `<ul>` define uma lista não ordenada.
+- **Atributos Comuns**:
+  - **Global attributes**: `class`, `id`, `style`, `title`, etc.
+
+#### `<li>`
+- **Descrição**: A tag `<li>` define um item em uma lista (ordenada ou não ordenada).
+- **Atributos Comuns**:
+  - **Global attributes**: `class`, `id`, `style`, `title`, etc.
+
+#### `<aside>`
+- **Descrição**: A tag `<aside>` é usada para conteúdo relacionado tangencialmente ao conteúdo principal.
+
+<br>
+
+- **Atributos Comuns**:
+
+  > **Global attributes**: `class`, `id`, `style`, `title`, etc.
+
+#### `<figcaption>`
+- **Descrição**: A tag `<figcaption>` define uma legenda para o conteúdo da `<figure>`.
+- **Atributos Comuns**:
+  - **Global attributes**: `class`, `id`, `style`, `title`, etc.
+
+### Atributos Globais
+
+Todas as tags mencionadas podem ter os seguintes atributos globais:
+
+- **`class`**: Define uma ou mais classes CSS para o elemento.
+- **`id`**: Define um identificador único para o elemento.
+- **`style`**: Define estilos inline para o elemento.
+- **`title`**: Define um título adicional para o elemento, frequentemente exibido como um tooltip.
+
+`<table>`
+Descrição: Define uma tabela.
+Atributos:
+border: Especifica a largura da borda da tabela.
+
+`<thead>`
+Descrição: Agrupa o conteúdo do cabeçalho de uma tabela.
+Atributos Comuns:
+Global attributes: class, id, style, title, etc.
+
+`<tr>`
+Descrição: Define uma linha em uma tabela.
+Atributos Comuns:
+Global attributes: class, id, style, title, etc.
+
+`<th>`
+Descrição: Define uma célula de cabeçalho em uma tabela.
+Atributos:
+Global attributes: class, id, style, title, etc.
+rowspan: Especifica o número de linhas que uma célula de cabeçalho abrange.
+colspan: Especifica o número de colunas que uma célula de cabeçalho abrange.
+
+`<tbody>`
+Descrição: Agrupa o conteúdo do corpo de uma tabela.
+Atributos Comuns:
+Global attributes: class, id, style, title, etc.
+
+`<td>`
+Descrição: Define uma célula em uma tabela.
+Atributos:
+Global attributes: class, id, style, title, etc.
+rowspan: Especifica o número de linhas que uma célula abrange.
+colspan: Especifica o número de colunas que uma célula abrange.
+
+`<img>`
+Descrição: Incorpora uma imagem em uma página HTML.
+Atributos:
+src: Especifica o caminho da imagem.
+alt: Fornece um texto alternativo para a imagem.
+height e width: Especificam a altura e a largura da imagem.
 
 ##### Lista de comandos HTML:
 
@@ -364,15 +481,15 @@ Ao adicionar uma imagem, é preciso levar em consideração que as imagens adici
 
 > `<a href="URL">` Conteúdo </a> | Usada para criar um hiperlink que direciona para outra página ou parte da mesma página.
 
-> `<span> Conteúdo </span>` | Usada para definir uma seção em linha, usada para agrupar elementos dentro de um parágrafo ou outro bloco de texto.
+> `<span>` | Usada para definir uma seção em linha, usada para agrupar elementos dentro de um parágrafo ou outro bloco de texto.
 
-> `<table> Conteúdo </table>` | Usada para definir uma tabela de dados.
+> `<table>` | Usada para definir uma tabela de dados.
 
-> `<ul> Conteúdo </ul>` | Usada para definir uma lista não ordenada (com marcadores).
+> `<ul> ` | Usada para definir uma lista não ordenada (com marcadores).
 
-> `<ol> Conteúdo </ol>` | Usada para definir uma lista ordenada (numerada).
+> `<ol>` | Usada para definir uma lista ordenada (numerada).
 
-> `<li> Conteúdo </li>` | Usada para definir um item de lista, dentro de uma `<ul>` ou `<ol>`.
+> `<li>` | Usada para definir um item de lista, dentro de uma `<ul>` ou `<ol>`.
 
 > `<img src="URL" alt="Descrição">` | Usada para definir uma imagem. O atributo src especifica o caminho da imagem e o atributo alt fornece um texto alternativo.
 
@@ -380,9 +497,15 @@ Ao adicionar uma imagem, é preciso levar em consideração que as imagens adici
 
 >`<hr>` | Usado para criar uma linha horizontal
 
-> `<div> Conteúdo </div>` | Usada para definir uma divisão ou seção no documento, geralmente usada para agrupar elementos
+> `<div>` | Usada para definir uma divisão ou seção no documento, geralmente usada para agrupar elementos
 
-> `<span> Conteúdo </span>` | Usada para definir uma seção em linha, usada para agrupar elementos dentro de um parágrafo ou outro bloco de texto
+> `<span>` | Usada para definir uma seção em linha, usada para agrupar elementos dentro de um parágrafo ou outro bloco de texto
+
+> `<header>` | Usado para criar o cabeçalho de uma página
+
+> `<main>` | Usado como conteiner para o conteudo principal da página
+
+> `<footer>` | Usado para criar o rodapé de uma página
 
 - Lista de comandos de formatação de texto em HTML: 
 
