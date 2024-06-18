@@ -465,6 +465,171 @@ src: Especifica o caminho da imagem.
 alt: Fornece um texto alternativo para a imagem.
 height e width: Especificam a altura e a largura da imagem.
 
+A tag `<input>` em HTML é um dos elementos mais versáteis, usada para criar uma variedade de campos interativos em formulários. Aqui está uma descrição detalhada de todos os atributos que podem ser usados com a tag `<input>`, especialmente quando especificamos diferentes tipos usando o atributo `type`.
+
+### Atributos Comuns de `<input type="...">`
+
+1. **`type`**
+   - **Descrição**: Especifica o tipo de controle de entrada.
+   - **Valores Comuns**:
+     - `text`, `password`, `email`, `number`, `date`, `time`, `checkbox`, `radio`, `submit`, `reset`, `button`, `file`, `hidden`, `image`, `search`, `url`, `tel`, `color`, etc.
+
+2. **`id`**
+   - **Descrição**: Define um identificador único para o controle.
+
+3. **`name`**
+   - **Descrição**: Especifica o nome do controle, usado para identificar os dados do controle ao enviar o formulário.
+
+4. **`value`**
+   - **Descrição**: Define o valor inicial do controle. Este valor é enviado com o formulário.
+
+5. **`placeholder`**
+   - **Descrição**: Fornece uma dica ao usuário sobre o que pode ser inserido no controle (aplica-se a `text`, `search`, `url`, `tel`, `email`, `password`).
+
+6. **`required`**
+   - **Descrição**: Indica que o controle deve ser preenchido antes de enviar o formulário.
+
+7. **`disabled`**
+   - **Descrição**: Desabilita o controle, tornando-o não interativo.
+
+8. **`readonly`**
+   - **Descrição**: Torna o controle somente leitura (aplica-se a `text`, `search`, `url`, `tel`, `email`, `password`, `number`, `date`, `time`).
+
+9. **`maxlength`**
+   - **Descrição**: Especifica o número máximo de caracteres que o usuário pode inserir (aplica-se a `text`, `search`, `url`, `tel`, `email`, `password`).
+
+10. **`minlength`**
+    - **Descrição**: Especifica o número mínimo de caracteres que o usuário deve inserir (aplica-se a `text`, `search`, `url`, `tel`, `email`, `password`).
+
+11. **`size`**
+    - **Descrição**: Especifica o número de caracteres visíveis (aplica-se a `text`, `search`, `tel`, `url`, `email`, `password`).
+
+12. **`pattern`**
+    - **Descrição**: Define uma expressão regular que o valor do controle deve corresponder (aplica-se a `text`, `search`, `url`, `tel`, `email`, `password`).
+
+13. **`min`**
+    - **Descrição**: Especifica o valor mínimo permitido (aplica-se a `number`, `range`, `date`, `datetime-local`, `month`, `time`, `week`).
+
+14. **`max`**
+    - **Descrição**: Especifica o valor máximo permitido (aplica-se a `number`, `range`, `date`, `datetime-local`, `month`, `time`, `week`).
+
+15. **`step`**
+    - **Descrição**: Especifica o incremento numérico dos valores permitidos (aplica-se a `number`, `range`, `date`, `datetime-local`, `month`, `time`, `week`).
+
+16. **`multiple`**
+    - **Descrição**: Permite que o usuário selecione mais de um valor (aplica-se a `email` e `file`).
+
+17. **`accept`**
+    - **Descrição**: Especifica o tipo de arquivos que o controle de entrada de arquivos (`file`) deve aceitar (por exemplo, `accept="image/*"`).
+
+18. **`checked`**
+    - **Descrição**: Indica que o controle está marcado por padrão (aplica-se a `checkbox` e `radio`).
+
+19. **`alt`**
+    - **Descrição**: Define um texto alternativo para a imagem se o tipo for `image`.
+
+20. **`src`**
+    - **Descrição**: Especifica o URL da imagem a ser exibida, se o tipo for `image`.
+
+21. **`autocomplete`**
+    - **Descrição**: Define se o navegador deve tentar completar automaticamente os valores inseridos pelo usuário (valores: `on`, `off`).
+
+22. **`autofocus`**
+    - **Descrição**: Define que o controle deve receber o foco automaticamente ao carregar a página.
+
+23. **`form`**
+    - **Descrição**: Associa o controle a um ou mais formulários.
+
+24. **`formaction`**
+    - **Descrição**: Define a URL para onde os dados do formulário devem ser enviados (aplica-se a `submit` e `image`).
+
+25. **`formenctype`**
+    - **Descrição**: Define como os dados do formulário devem ser codificados ao serem enviados ao servidor (aplica-se a `submit` e `image`).
+
+26. **`formmethod`**
+    - **Descrição**: Especifica o método HTTP (`GET` ou `POST`) a ser usado ao enviar o formulário (aplica-se a `submit` e `image`).
+
+27. **`formnovalidate`**
+    - **Descrição**: Desativa a validação do formulário ao enviar (aplica-se a `submit` e `image`).
+
+28. **`formtarget`**
+    - **Descrição**: Especifica onde exibir a resposta após enviar o formulário (aplica-se a `submit` e `image`).
+
+### Exemplos Práticos de Uso:
+
+1. **Texto Simples**:
+    ```html
+    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    ```
+
+2. **Senha**:
+    ```html
+    <input type="password" id="password" name="password" required>
+    ```
+
+3. **Email**:
+    ```html
+    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+    ```
+
+4. **Número**:
+    ```html
+    <input type="number" id="quantity" name="quantity" min="1" max="10" step="1">
+    ```
+
+5. **Data**:
+    ```html
+    <input type="date" id="birthday" name="birthday">
+    ```
+
+6. **Hora**:
+    ```html
+    <input type="time" id="appt" name="appt">
+    ```
+
+7. **Cor**:
+    ```html
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+    ```
+
+8. **Arquivo**:
+    ```html
+    <input type="file" id="myfile" name="myfile" accept=".jpg,.jpeg,.png,.pdf">
+    ```
+
+9. **Checkbox**:
+    ```html
+    <input type="checkbox" id="subscribe" name="subscribe" checked>
+    ```
+
+10. **Radio**:
+    ```html
+    <input type="radio" id="male" name="gender" value="male">
+    <input type="radio" id="female" name="gender" value="female">
+    ```
+
+11. **URL**:
+    ```html
+    <input type="url" id="website" name="website" placeholder="https://example.com">
+    ```
+
+12. **Submit**:
+    ```html
+    <input type="submit" value="Submit">
+    ```
+
+13. **Reset**:
+    ```html
+    <input type="reset" value="Reset">
+    ```
+
+14. **Hidden**:
+    ```html
+    <input type="hidden" id="userid" name="userid" value="12345">
+    ```
+
+Essa descrição cobre a maioria dos atributos que podem ser usados com a tag `<input>` em diferentes tipos, proporcionando uma ampla flexibilidade para criar formulários interativos e úteis.
+
 ##### Lista de comandos HTML:
 
 > `<!-- *conteudo * -->` | Usado para acrescentar comentários no código que não aparecerão para o usuário final.
