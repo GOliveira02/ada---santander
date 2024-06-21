@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.headerp1 {
+    background-color: aquamarine;
+}
+
+h2 {
+    color: red;
+    background-color: aqua;
+}
+
+.txt-orcasg{
+    text-align: justify;
+    height: 300px;
+    width: 800px;
+    font-size: 20px;
+}
+
+.bg1 {
+    height: 400px;
+    width: 1000px;
+    background-image: url(https://img.freepik.com/fotos-gratis/uma-baleia-jubarte-saltando-sobre-o-mar-ai-generative_123827-24265.jpg?t=st=1718942151~exp=1718945751~hmac=eb6f4680f630c10768b4fb00bb2018c4a5186e034532b8c73153005c1c2c3d23&w=900);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: local;
+}
