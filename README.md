@@ -700,6 +700,159 @@ Essa descrição cobre a maioria dos atributos que podem ser usados com a tag `<
 
 > `<blockquote> Conteúdo </blockquote>` | Usada para indicar uma citação em bloco.
 
+### CSS
+
+### Cores
+
+#### Propriedades de Cor
+
+- **`color`**: Define a cor do texto de um elemento.
+  ```css
+  p {
+    color: blue;
+  }
+  ```
+
+- **`background-color`**: Define a cor de fundo de um elemento.
+  ```css
+  div {
+    background-color: yellow;
+  }
+  ```
+
+### Formatos de Cor
+
+- **Nomes de Cores**: ex. `red`, `blue`, `green`.
+- **Hexadecimal**: ex. `#ff0000` (vermelho).
+- **RGB**: ex. `rgb(255, 0, 0)` (vermelho).
+- **RGBA**: ex. `rgba(255, 0, 0, 0.5)` (vermelho com 50% de opacidade).
+- **HSL**: ex. `hsl(0, 100%, 50%)` (vermelho).
+- **HSLA**: ex. `hsla(0, 100%, 50%, 0.5)` (vermelho com 50% de opacidade).
+
+## Background
+
+### Propriedades de Background
+
+- **`background`**: Atalho para definir todas as propriedades de fundo em uma única linha.
+  ```css
+  body {
+    background: #ffffff url('bg.jpg') no-repeat fixed center;
+  }
+  ```
+
+- **`background-image`**: Define uma imagem de fundo para um elemento.
+  ```css
+  header {
+    background-image: url('header-bg.jpg');
+  }
+  ```
+
+- **`background-repeat`**: Define se e como a imagem de fundo será repetida.
+  ```css
+  section {
+    background-repeat: no-repeat;
+  }
+  ```
+
+- **`background-position`**: Define a posição da imagem de fundo.
+  ```css
+  footer {
+    background-position: center bottom;
+  }
+  ```
+
+- **`background-size`**: Define o tamanho da imagem de fundo.
+  ```css
+  aside {
+    background-size: cover;
+  }
+  ```
+
+- **`background-attachment`**: Define se a imagem de fundo é fixa ou rola com a página.
+  ```css
+  article {
+    background-attachment: fixed;
+  }
+  ```
+
+## Edição de Texto
+
+### Propriedades de Texto
+
+- **`font-family`**: Define a família de fontes do texto.
+  ```css
+  h1 {
+    font-family: 'Arial', sans-serif;
+  }
+  ```
+
+- **`font-size`**: Define o tamanho da fonte.
+  ```css
+  p {
+    font-size: 16px;
+  }
+  ```
+
+- **`font-weight`**: Define a espessura da fonte.
+  ```css
+  strong {
+    font-weight: bold;
+  }
+  ```
+
+- **`font-style`**: Define o estilo da fonte (normal, itálico, oblíquo).
+  ```css
+  em {
+    font-style: italic;
+  }
+  ```
+
+- **`text-align`**: Define o alinhamento do texto (left, right, center, justify).
+  ```css
+  div {
+    text-align: center;
+  }
+  ```
+
+- **`text-decoration`**: Define a decoração do texto (underline, overline, line-through, none).
+  ```css
+  a {
+    text-decoration: none;
+  }
+  ```
+
+- **`line-height`**: Define a altura da linha.
+  ```css
+  p {
+    line-height: 1.5;
+  }
+  ```
+
+- **`letter-spacing`**: Define o espaçamento entre caracteres.
+  ```css
+  h1 {
+    letter-spacing: 2px;
+  }
+  ```
+
+- **`text-transform`**: Define a capitalização do texto (uppercase, lowercase, capitalize).
+  ```css
+  h2 {
+    text-transform: uppercase;
+  }
+  ```
+
+- **`text-shadow`**: Adiciona sombra ao texto.
+  ```css
+  h3 {
+    text-shadow: 2px 2px 5px grey;
+  }
+  ```
+
+---
+
+Este resumo cobre as principais propriedades relacionadas a cores, background e edição de texto em CSS, juntamente com exemplos de como usá-las.
+
 
 ## Teste de aptidão
 ### Resultado
